@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 100svh;
+    min-height: 100vh;
     position: relative;
     padding-inline: 10%;
     background: ${({ theme }) => theme.COLORS.GREY};
