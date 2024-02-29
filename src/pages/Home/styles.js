@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     position: relative;
-    height: 100vh;
+    height: 100svh;
     background: ${({ theme }) => theme.COLORS.CREAM};
     display: grid;
     place-content: center;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 100vh;
+    height: 100svh;
     position: relative;
     padding-inline: 10%;
     background: ${({ theme }) => theme.COLORS.GREY};
@@ -13,10 +13,9 @@ export const Container = styled.div`
     font-size: clamp(1.2rem, calc(1rem + 1vw), 1.8rem);
     line-height: 1.5;
 
-    h1 {
-        position: absolute;
-        top: 5rem;
-
+    .title {
+        position: relative;
+        top: -5rem;
         color: ${({ theme }) => theme.COLORS.PURPLE};
         font-size: clamp(3.2rem, calc(2rem + 2vw), 5rem);
         font-weight: bold;
@@ -36,9 +35,6 @@ export const Container = styled.div`
     
     /* Desktop */
     @media (min-width: 600px) {
-        h1 {
-            top: 15rem;
-        }
         .profile-pic {
             grid-column-start: 1;
             height: 100%;
@@ -49,7 +45,6 @@ export const Container = styled.div`
         }
 
         .flex-wrapper {
-            margin-top: 10rem;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             column-gap: 10rem;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 100vh;
+    height: 100svh;
     position: relative;
     background: ${({ theme }) => theme.COLORS.GREEN};
     padding-inline: 10%;
@@ -13,8 +13,8 @@ export const Container = styled.div`
         color: ${({ theme }) => theme.COLORS.CREAM};
         font-size: clamp(3.2rem, calc(2rem + 2vw), 5rem);
         font-weight: bold;
-        position: absolute;
 
+        position: absolute;
         top: 5rem;
         left: 10%;
         max-width: 21rem;

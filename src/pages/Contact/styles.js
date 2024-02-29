@@ -4,7 +4,7 @@ export const Container = styled.div`
     background: ${({ theme }) => theme.COLORS.PURPLE};
     font-family: ${({ theme }) => theme.FONTS.MAIN_FONT};
     position: relative;
-    height: 100vh;
+    height: 100svh;
     padding-inline: 10%;
     display: grid;
     place-content: center;

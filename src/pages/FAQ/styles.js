@@ -10,7 +10,7 @@ const scaleUpCenter = keyframes`
 `;
 
 export const Container = styled.div`
-    height: 100vh;
+    height: 100svh;
     position: relative;
     background: ${({ theme }) => theme.COLORS.CREAM};
     display: flex;

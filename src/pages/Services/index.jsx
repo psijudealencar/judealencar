@@ -12,7 +12,6 @@ export function Services() {
   return (
     <Container id='sobre-a-psicoterapia'>
             <h1 className='title'>sobre a psicoterapia</h1>
-
             <div className="flex-wrapper">
                     <figure>
                       <img src={icon1} alt="Icone de uma caneta tinteiro de pena na cor lilas" />
