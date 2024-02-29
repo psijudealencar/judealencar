@@ -86,7 +86,7 @@ export const Container = styled.div`
         }
     }
     
-    .flex-wrapper p {
+    .flex-wrapper .poem {
         max-width: 50rem;
         margin-left: auto;
         text-align: end;
@@ -120,8 +120,8 @@ export const Container = styled.div`
         border-radius: 5rem;
         text-align: start;
         z-index: 1001;
-        max-width: 80%;
-        max-height: 80%;
+        max-width: 90%;
+        max-height: 90vh;
 
         &.open {
             animation: ${scaleUpCenter} 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

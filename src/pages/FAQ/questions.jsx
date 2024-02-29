@@ -1,37 +1,36 @@
 export const questions = [
   {
-    question: `A Psicoterapia é mais do que “conversar”?`,
+    question: `Como a psicoterapia funciona e por que ela funciona?`,
     answer: (
       <>
         <div className='row-start'>
-          <h1>A Psicoterapia é mais do que “conversar”?</h1>
-          <p>Algumas pessoas costumam perguntar “Por que a psicoterapia pode me ajudar? Sempre falo dos meus problemas com amigos, e falar não muda nada”. É muito bom termos amigos que estão disponíveis para nós e prontos para nos escutar. Mas se conversar com os amigos não resolve o seu problema, pode ser que o tipo de conversa que acontece seja apenas isso: “conversa”.</p>
-          <p className='ident'>Ao contrário, a natureza da “conversa” que acontece no contexto da psicoterapia está ligada em um processo mais profundo de autoconhecimento e mudança pessoal. Conversar é apenas “a ponta do iceberg” onde ocorre o processo mais profundo. A “fala” ou “conversa” é apenas um componente óbvio do processo, ocorrendo muito mais que isso ao nível cognitivo e emocional.</p>
+          <h1>Como a psicoterapia funciona e por que ela funciona?</h1>
+          <p>A terapia funciona na medida em que ela oferece e constrói um contexto de relação que a pessoa pode refletir e experimentar a si mesma, e seus problemas, os seus dilemas e questões que ela vive sobre a vida, de maneiras inéditas e diferentes.</p>
         </div>
         <div className='row-end'>
-          <p className='ident'>Apesar da troca de palavras ocorrida entre cliente e psicóloga possa parecer a forma mais óbvia de comunicação, na realidade a terapia pode oferecer uma experiência muito mais rica do que uma mera troca de palavras e conselhos.
-          Porque ao falar, nos escutamos, e temos a oportunidade de ressignificar o que aconteceu. É como se ao mudarmos nossa forma de pensar e enxergar o mundo, temos a oportunidade de viver de uma forma diferente.</p>
-          <p className='ident'>Os pensamentos e sentimentos partilhados pela cliente e as técnicas utilizadas pela psicóloga são, contudo, muito menos importantes do que a relação terapêutica construída entre a dupla. A relação estabelecida com a terapeuta é essencial para a eficácia do processo, por isso é muito importante que o cliente encontre uma profissional com a qual consiga estabelecer uma relação segura, com confiança e confortável, uma profissional que a faça sentir-se ouvida e compreendida.</p>
+          <p className='ident'>Então, a função da terapeuta é construir esse espaço para que essa diferença possa surgir. E ela funciona a partir de alguns elementos principalmente desse vínculo que se constrói e da possibilidade de se ir para lugares outros na vida.</p>
         </div>
       </>
     )
   },
   {
-    question: 'Em primeiro lugar, o que é psicoterapia?',
+    question: 'Como funciona a abordagem do Construcionismo Social?',
     answer: (
       <>
         <div className="row-start">
-          <h1>Em primeiro lugar, o que é psicoterapia?</h1>
-          <p>A psicoterapia é um processo onde se analisa e busca a melhoria de sofrimentos psicológicos, redução de angústias, resolução de condições emocionais relacionadas a eventos passados, desconfortos cotidianos, dúvidas e questionamentos sobre si mesmo e sua vida.</p>
+          <h1>Como funciona a terapia a partir da abordagem do Construcionismo Social?</h1>
+          <p>Construcionismo social pensa a terapia como um contexto de produção de sentidos e significados e isso é feito nas relações. Então os dois conceitos principais são: a linguagem e o relacionamento paciente-psicoterapeuta, ou seja, o que a gente faz junto na sessão. O foco é como a gente constrói um contexto de linguagem e relacionamento que as pessoas possam produzir sentidos sobre as situações de vida que elas estão passando, seus problemas, quem são elas e o que se pode fazer a partir disso.</p>
+          <p className="ident">Na prática, isso significa que a conversa terapêutica não é orientada por nenhum objetivo dado a priori. Essas coisas são construídas, a própria demanda é construída na relação. E todas as teorias e técnicas são compreendidas como recursos que potencialmente ajudam a construir hipóteses, fazer perguntas, a oferecer entendimentos a partir dos quais vamos sempre ofertar para que a pessoa possa dizer se faz sentido ou não, ou seja, a construção.
+</p>
         </div>
         <div className="row-end">
-          <p className='ident'>Pode-se colocar, de maneira geral, que o objetivo final da psicoterapia é permitir que o indivíduo possa se desenvolver para conseguir viver harmonicamente no seu meio e consigo.</p>
+          <p className='ident'>A ideia do social tem duas implicações. A primeira é a do micro-social, do que a gente está fazendo junto na sessão e vem em contraposição com a ideia de um indivíduo autocontido. Então a função da terapeuta não é julgar, nem buscar dentro das pessoas as respostas, mas entender que é no contexto das conversações que vamos encontrando formas de seguir junto. E tem o social que é o macro-social, no qual estamos sempre atentas a como o dilema da pessoa, as coisas que elas vivem e o que conversamos,  é composto e atravessado com a nossa forma de viver em sociedade. É uma conversa de cada vez, na qual vamos produzindo entendimento, ação, significado, sentimento.</p>
         </div>
       </>
     )
   },
   {
-    question: 'Quem pode ou deve fazer sessões com psicóloga?',
+    question: 'Quem pode ou deve fazer sessões com uma psicóloga?',
     answer: (
       <>
         <div className="row-start">
@@ -46,17 +45,18 @@ export const questions = [
     )
   },
   {
-    question: 'Quantos tipos de psicoterapia existem?',
+    question: 'A Psicoterapia é mais do que “conversar”?',
     answer: (
       <>
         <div className="row-start">
-          <h1>Quantos tipos de psicoterapia existem?</h1>
-          <p>Tantas quantos psicoterapeutas existentes. É verdade que existe um número limitado de abordagens teóricas - e ainda são diversas! - mas cada processo psicoterapêutico depende da formação do psicólogo, da sua experiência pessoal e profissional, e principalmente, da capacidade em estabelecer um vínculo de confiança com a paciente.</p>
-          <p className='ident'>Podemos pensar nas abordagens teóricas como eixos de referência para cada tipo de psicoterapia (ex. psicanálise freudiana, psicanálise lacaniana, terapia analítico-comportamental, terapia cognitiva, terapia sistêmica, psicodrama, gestalt terapia, terapia centrada na pessoa, histórico-dialética, etc.), mas onde cada relação terapêutica se tornará única por envolver uma terapeuta [com sua formação e leitura própria sobre cada caso] atendendo um paciente com sua história de vida também única e individual.</p>
+          <h1>A Psicoterapia é mais do que “conversar”?</h1>
+          <p>Algumas pessoas costumam perguntar “Por que a psicoterapia pode me ajudar? Sempre falo dos meus problemas com amigos, e falar não muda nada”. É muito bom termos amigos que estão disponíveis para nós e prontos para nos escutar. Mas se conversar com os amigos não resolve o seu problema, pode ser que o tipo de conversa que acontece seja apenas isso: “conversa”.</p>
+          <p className='ident'>Ao contrário, a natureza da “conversa” que acontece no contexto da psicoterapia está ligada em um processo mais profundo de autoconhecimento e mudança pessoal. Conversar é apenas “a ponta do iceberg” onde ocorre o processo mais profundo. A “fala” ou “conversa” é apenas um componente óbvio do processo, ocorrendo muito mais que isso ao nível cognitivo e emocional.</p>
         </div>
         <div className="row-end">
-          <p className='ident'>A eficácia da terapia tem muito mais a ver com a capacidade da psicoterapeuta em formar e manter vínculos com diferentes pessoas, se mostrarem empáticos e de se envolver e estudar sobre terapia para além do momento da clínica.</p>
-          <p className='ident'>Algo importante de ressaltar, é que apesar das disputas teóricas entre abordagens, não há diferenças significativas de desfecho quando são comparadas entre si. Em outras palavras, em termos de resultados, as teorias possivelmente importam bem menos do que gostamos de acreditar. </p>
+          <p className='ident'>Apesar da troca de palavras ocorrida entre cliente e psicóloga possa parecer a forma mais óbvia de comunicação, na realidade a terapia pode oferecer uma experiência muito mais rica do que uma mera troca de palavras e conselhos.</p>
+          <p className='ident'>Porque ao falar, nos escutamos, e temos a oportunidade de ressignificar o que aconteceu. É como se ao mudarmos nossa forma de pensar e enxergar o mundo, temos a oportunidade de viver de uma forma diferente.</p>
+          <p className="ident">Os pensamentos e sentimentos partilhados pela cliente e as técnicas utilizadas pela psicóloga são, contudo, muito menos importantes do que a relação terapêutica construída entre a dupla. A relação estabelecida com a terapeuta é essencial para a eficácia do processo, por isso é muito importante que o cliente encontre uma profissional com a qual consiga estabelecer uma relação segura, com confiança e confortável, uma profissional que a faça sentir-se ouvida e compreendida.</p>
         </div>
       </>
     )

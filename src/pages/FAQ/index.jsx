@@ -57,17 +57,12 @@ export function FAQ() {
           ))}
         </ul>
 
-        <p>
-          Peço-lhe, tanto quanto puder, caro senhor, que seja paciente com tudo o que não esteja resolvido em seu coração e tente ter amor pelas próprias perguntas, como se fossem quartos trancados ou livros escritos em uma língua estrangeira. Não busque agora as respostas que não lhe podem ser dadas, porque não poderia vivê-las.
-          <br />
-          E é disso que se trata, de viver tudo.
-          <br />
-          Viva agora as perguntas.
-          <br />
-          Talvez, então, gradativamente, sem notar, em algum dia distante, você venha viver nas respostas.
-          <br />
-          <br />
-          <span>Rainer Maria Rilke, em Cartas a um Jovem Poeta</span>
+        <p className='poem'>
+        Peço-lhe, tanto quanto puder, caro senhor, que seja paciente com tudo o que não esteja resolvido em seu coração e tente ter amor pelas próprias perguntas, como se fossem quartos trancados ou livros escritos em uma língua estrangeira. Não busque agora as respostas que não lhe podem ser dadas, porque não poderia vivê-las. E é disso que se trata, de viver tudo. 
+        Viva agora as perguntas.
+        Talvez, então, gradativamente, sem notar, em algum dia distante, você venha viver nas respostas.
+        <br />
+        <span>Rainer Maria Rilke, em Cartas a um Jovem Poeta</span>
         </p>
       </div>
 
