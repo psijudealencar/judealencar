@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    
     background: ${({ theme }) => theme.COLORS.PURPLE};
     font-family: ${({ theme }) => theme.FONTS.MAIN_FONT};
     position: relative;
-    min-height: 100vh;
     padding-inline: 10%;
     display: grid;
     place-content: center;

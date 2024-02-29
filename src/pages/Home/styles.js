@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+
     position: relative;
-    min-height: 100vh;
     background: ${({ theme }) => theme.COLORS.CREAM};
     display: grid;
     place-content: center;

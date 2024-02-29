@@ -1,23 +1,12 @@
-import { useState, useEffect } from 'react';
 import { Container } from './styles';
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import logoGreenSquare from '../../assets/logo-green-square.png';
 import logoGreen from '../../assets/logo-green.png';
+import { useIsMobileLogo } from '../../hooks/useIsMobileLogo';
 
 export function Contact() {
-  const [isMobileLogo, setIsMobileLogo] = useState(true);
-
-  useEffect (() => {
-    const handleResize = () => {
-      setIsMobileLogo(window.innerWidth <= 600);
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const isMobileLogo = useIsMobileLogo();
 
   return (
     <Container id='contato'>

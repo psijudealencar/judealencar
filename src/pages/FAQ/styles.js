@@ -10,7 +10,9 @@ const scaleUpCenter = keyframes`
 `;
 
 export const Container = styled.div`
-    min-height: 100vh;
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+
     position: relative;
     background: ${({ theme }) => theme.COLORS.CREAM};
     display: flex;

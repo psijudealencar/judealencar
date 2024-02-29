@@ -4,6 +4,7 @@ import logoGreen from '../../assets/logo-green.png';
 import aboutMe from '../../assets/aboutMe.png';
 
 export function AboutMe() {
+
   return (
     <Container id='sobre-mim'>
       <h1 className='title'>sobre mim</h1>

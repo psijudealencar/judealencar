@@ -1,22 +1,11 @@
 import { Container } from './styles';
 import { FaWhatsapp } from "react-icons/fa";
-import { useEffect, useState } from 'react';
 import logoPurple from '../../assets/logo-purple.png';
 import logoPurpleSquare from '../../assets/logo-purple-square.png';
+import { useIsMobileLogo } from '../../hooks/useIsMobileLogo';
 
 export function Home() {
-  const [isMobileLogo, setIsMobileLogo] = useState(true);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileLogo(window.innerWidth <= 600);
-    };
-
-    window.addEventListener('resize', handleResize);
-    handleResize();
-
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const isMobileLogo = useIsMobileLogo();
 
   return (
     <Container id='home'>

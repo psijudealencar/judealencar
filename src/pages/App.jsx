@@ -1,5 +1,5 @@
 import useScrollSnap from "react-use-scroll-snap";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import { Home } from './Home';
@@ -12,11 +12,24 @@ export function App() {
     const scrollRef = useRef(null);
     useScrollSnap({ ref: scrollRef, duration: 50, delay: 20 });
     
+    useEffect(() => {
+        const handleResize = () => {
+          let vh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--vh', `${vh}px`);
+        };
+    
+        handleResize();
+    
+        window.addEventListener('resize', handleResize);
+    
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+
     return (
         <div 
         ref={scrollRef} >
             <Home />
-            <AboutMe />
+            <AboutMe className='about'/>
             <Services />
             <FAQ />
             <Contact />
