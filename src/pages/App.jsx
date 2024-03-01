@@ -29,7 +29,7 @@ export function App() {
         <div 
         ref={scrollRef} >
             <Home />
-            <AboutMe className='about'/>
+            <AboutMe />
             <Services />
             <FAQ />
             <Contact />
