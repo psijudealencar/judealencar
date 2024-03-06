@@ -14,8 +14,8 @@ export function App() {
     
     useEffect(() => {
         const handleResize = () => {
-          let vh = window.innerHeight * 0.01;
-          document.documentElement.style.setProperty('--vh', `${vh}px`);
+          let svh = window.innerHeight * 0.01;
+          document.documentElement.style.setProperty('--svh', `${svh}px`);
         };
     
         handleResize();
