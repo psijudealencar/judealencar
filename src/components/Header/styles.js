@@ -23,7 +23,7 @@ export const Container = styled.header`
       align-items: center;
       text-align: center;
 
-      height: 4vh;
+      height: calc(var(--vh, 1vh) * 4);
       font-size: 1.2rem;
 
       a {

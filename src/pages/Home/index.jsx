@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import logoPurple from '../../assets/logo-purple.png';
 import logoPurpleSquare from '../../assets/logo-purple-square.png';
 import { useIsMobileLogo } from '../../hooks/useIsMobileLogo';
-
+400
 export function Home() {
   const isMobileLogo = useIsMobileLogo();
 

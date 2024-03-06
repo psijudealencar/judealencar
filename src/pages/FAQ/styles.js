@@ -27,7 +27,7 @@ export const Container = styled.div`
         font-weight: bold;
 
         position: absolute;
-        top: 5rem;
+        top: 6%; 
         max-width: 25rem;
     }
 

@@ -16,8 +16,9 @@ export const Container = styled.div`
     line-height: 1.5;
 
     .title {
-        position: relative;
-        top: -5rem;
+        position: absolute;
+        top: 6%; 
+        left: 10%;
         color: ${({ theme }) => theme.COLORS.PURPLE};
         font-size: clamp(3.2rem, calc(2rem + 2vw), 5rem);
         font-weight: bold;

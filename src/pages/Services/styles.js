@@ -17,12 +17,13 @@ export const Container = styled.div`
         font-weight: bold;
 
         position: absolute;
-        top: 5rem;
+        top: 6%; 
         left: 10%;
         max-width: 21rem;
     }
     
     .flex-wrapper {
+        margin-top: 15%;
         display: flex;
         flex-wrap: wrap;
         align-items: center;

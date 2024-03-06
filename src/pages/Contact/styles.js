@@ -10,7 +10,6 @@ export const Container = styled.div`
     padding-inline: 10%;
     display: grid;
     place-content: center;
-    gap: 3rem;
 
     .flex-wrapper {
         display: flex;
@@ -31,10 +30,11 @@ export const Container = styled.div`
 
         button {
             background: #FFF;
+            font-size: clamp(1.2rem, calc(1rem + 1vw), 2rem);
             padding: 1rem;
+            margin-bottom: 2rem;
             border-radius: 10rem;
             width: 100%;
-            font-size: 1.8rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -105,15 +105,17 @@ export const Container = styled.div`
             button {
                 width: 80%;
                 grid-column: span 2;
-                font-size: 3rem;
+                font-size: clamp(1.2rem, calc(1rem + 1vw), 2rem);
+                text-overflow: overflow;
+                white-space: nowrap;
                 padding: 2rem;
 
                 a {
                     gap: 3rem;
                 }
-
+                
                 .wpplogo {
-                    font-size: 5rem;
+                    font-size: clamp(3rem, calc(1rem + 1vw), 5rem);
                 }
             }
         }
