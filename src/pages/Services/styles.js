@@ -13,7 +13,7 @@ export const Container = styled.div`
     .title {
         font-family: ${({ theme }) => theme.FONTS.MAIN_FONT};
         color: ${({ theme }) => theme.COLORS.CREAM};
-        font-size: clamp(3.2rem, calc(2rem + 2vw), 5rem);
+        font-size: clamp( 2rem, calc(2rem + 2vw), 3rem);
         font-weight: bold;
 
         position: absolute;
@@ -53,6 +53,7 @@ export const Container = styled.div`
         .title {
             top: 15rem;
             max-width: max-content;
+            font-size: clamp( 3rem, calc(2rem + 2vw), 5rem);
         }
 
         .flex-wrapper {

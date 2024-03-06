@@ -12,15 +12,15 @@ export const Container = styled.div`
     place-content: center;
 
     font-family: ${({ theme }) => theme.FONTS.MAIN_FONT};
-    font-size: clamp(1.2rem, calc(1rem + 1vw), 1.8rem);
-    line-height: 1.5;
+    font-size: clamp(1.6rem, calc(1rem + 1vw), 2rem);
+    text-align: justify;
 
     .title {
         position: absolute;
         top: 6%; 
         left: 10%;
         color: ${({ theme }) => theme.COLORS.PURPLE};
-        font-size: clamp(3.2rem, calc(2rem + 2vw), 5rem);
+        font-size: clamp( 2rem, calc(2rem + 2vw), 3rem);
         font-weight: bold;
     }
 
@@ -38,12 +38,17 @@ export const Container = styled.div`
     
     /* Desktop */
     @media (min-width: 600px) {
+        .title {
+            font-size: clamp( 3rem, calc(2rem + 2vw), 5rem);
+        }
+
         .profile-pic {
             grid-column-start: 1;
             height: 100%;
         }
 
         .about p {
+            line-height: 1.5;
             font-size: calc(14px + (18 - 14) * (100vw - 600px) / (800 - 400));
         }
 
