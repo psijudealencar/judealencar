@@ -33,7 +33,7 @@ export function Header() {
         <Link onClick={() => scrollToSection('sobre-a-psicoterapia')} className="psicoterapia" to="/sobre-a-psicoterapia">
           {isMobileHeader ? "Psicoterapia" : "Sobre a Psicoterapia"}
         </Link>
-        <Link onClick={() => scrollToSection('faq')} className="faq" to="/">{isMobileHeader ? "FAQ" : "Perguntas Frequentes"}</Link>
+        <Link onClick={() => scrollToSection('faq')} className="faq" to="/faq">{isMobileHeader ? "FAQ" : "Perguntas Frequentes"}</Link>
         <Link onClick={() => scrollToSection('contato')} className="contato" to="/contato">Contato</Link>
       </nav>
     </Container>

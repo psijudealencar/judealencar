@@ -18,6 +18,7 @@ export const Container = styled.header`
     }
 
     .mobile {
+      margin-top: 1rem;
       flex-grow: 1;
       justify-content: flex-end;
       align-items: center;
@@ -25,10 +26,9 @@ export const Container = styled.header`
 
       height: calc(var(--vh, 1vh) * 4);
       font-size: 1.2rem;
-
       a {
         flex-grow: 1;
-        padding: 1.1rem 0;
+        padding: 2rem 0;
       }
     }
 
