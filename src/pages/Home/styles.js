@@ -52,9 +52,7 @@ export const Container = styled.div`
     }
 
     p {
-        position: absolute;
-        bottom: 10%;
-        right: 5%;
+        place-self: end;
         text-align: end;
         font-weight: 300;
         font-style: italic;

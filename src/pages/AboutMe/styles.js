@@ -12,20 +12,17 @@ export const Container = styled.div`
     place-content: center;
 
     font-family: ${({ theme }) => theme.FONTS.MAIN_FONT};
-    font-size: clamp(1.6rem, calc(1rem + 1vw), 2rem);
+    font-size: clamp(1.2rem, calc(1rem + 1vw), 2rem);
     text-align: justify;
 
     .title {
-        position: absolute;
-        top: 6%; 
-        left: 10%;
         color: ${({ theme }) => theme.COLORS.PURPLE};
         font-size: clamp( 2rem, calc(2rem + 2vw), 3rem);
         font-weight: bold;
     }
 
     .profile-pic {
-        margin-bottom: 5rem;
+        margin: 2rem 0;
         object-fit: cover;
         border-radius: 8rem;
         box-shadow: .7rem .7rem .5rem rgba(0, 0, 0, 0.4);
