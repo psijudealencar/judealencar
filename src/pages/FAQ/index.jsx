@@ -4,6 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { Container } from './styles';
 import logoBlack from '../../assets/logo-black.png';
 import { questions } from './questions';
+import { motion } from 'framer-motion';
 
 export function FAQ() {
   const [expandedIndex, setExpandedIndex] = useState(null);
@@ -33,6 +34,11 @@ export function FAQ() {
 
   return (
     <Container id='faq'>
+      <motion.div
+        initial={{ opacity: 0, width: 0 }}
+        animate={{ opacity: 1, width: "100%" }}
+        exit={{ opacity: 0, x: window.innerWidth, transition: { duration: 0.1 } }}
+      >
       <h1 className='title'>perguntas frequentes</h1>
       <div className="flex-wrapper">
         <ul>
@@ -67,6 +73,7 @@ export function FAQ() {
       </div>
 
       <img className='logo' src={logoBlack} alt="Logo Juliana de Alencar" />
+      </motion.div>
     </Container>
   );
 }

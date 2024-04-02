@@ -1,13 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 100dvh;
+    .content {
+        height: 100dvh;
     height: calc(var(--svh, 1dvh) * 100);
 
     position: relative;
     background: ${({ theme }) => theme.COLORS.CREAM};
     display: grid;
     place-content: center;
+    }
 
     .banner {
         position: absolute;
@@ -32,16 +34,17 @@ export const Container = styled.div`
         gap: 5rem;
 
         img {
-            max-width: 50%; /* Alterado para 50% como padrão */
+            max-width: 50%;
         }
     }
 
     .flex-wrapper button {
-        width: 65%; /* Alterado para 65% como padrão */
+        width: 65%;
         font-size: 1.4rem;
         background: #FFF;
         padding: 1rem 3rem;
         border-radius: 10rem;
+        margin-bottom: 5%;
         
         a {
             display: flex;
@@ -54,6 +57,7 @@ export const Container = styled.div`
     p {
         place-self: end;
         text-align: end;
+        margin-right: 5%;
         font-weight: 300;
         font-style: italic;
         font-size: 1.4rem;
