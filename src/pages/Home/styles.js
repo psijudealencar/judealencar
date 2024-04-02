@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     .content {
-    height: 100dvh;
+    height: calc(100dvh - 5rem);
 
     position: relative;
     background: ${({ theme }) => theme.COLORS.CREAM};
@@ -18,12 +18,12 @@ export const Container = styled.div`
     }
 
     .top {
-        height: 12vh;
+        height: 5vh;
         top: 0;
     }
 
     .bottom {
-        height: 7vh;
+        height: 5vh;
         bottom: 0;
     }
 

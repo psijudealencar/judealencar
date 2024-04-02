@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 100dvh;
+  height: calc(100dvh - 5rem);
 
   position: relative;
   background: ${({ theme }) => theme.COLORS.GREEN};
   padding-inline: 10%;
   display: grid;
-  place-content: center;
+  padding-top: 2rem;
 
   .title {
     font-family: ${({ theme }) => theme.FONTS.MAIN_FONT};
@@ -18,7 +18,7 @@ export const Container = styled.div`
   }
 
   .flex-wrapper {
-    margin-top: 15%;
+    margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -44,10 +44,9 @@ export const Container = styled.div`
 
   /* Desktop */
   @media (min-width: 600px) {
+    align-items: center;
+
     .title {
-      position: relative;
-      top: -10rem;
-      left: -10rem;
       max-width: max-content;
       font-size: clamp(3rem, calc(2rem + 2vw), 5rem);
     }

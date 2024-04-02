@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   .content {
-    height: 100dvh;
+    height: calc(100dvh - 5rem);
 
     background: ${({ theme }) => theme.COLORS.PURPLE};
     font-family: ${({ theme }) => theme.FONTS.MAIN_FONT};
@@ -22,10 +22,6 @@ export const Container = styled.div`
       justify-content: center;
       align-items: center;
       gap: 1rem;
-    }
-
-    .logoGreen {
-      margin-top: 7vh;
     }
 
     span {
@@ -78,7 +74,7 @@ export const Container = styled.div`
     }
 
     iframe {
-      min-height: 30rem;
+      min-height: 20rem;
       border-radius: 4rem;
       border-style: none;
       min-width: 100%;

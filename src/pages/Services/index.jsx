@@ -17,7 +17,7 @@ export function Services() {
         animate={{ opacity: 1, width: "100%" }}
         exit={{ opacity: 0, x: window.innerWidth, transition: { duration: 0.1 } }}
       >
-        <h1 className="title">sobre a psicoterapia</h1>
+      <h1 className="title">sobre a psicoterapia</h1>
         <div className="flex-wrapper">
           <figure>
             <img

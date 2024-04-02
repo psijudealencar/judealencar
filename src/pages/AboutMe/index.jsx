@@ -8,6 +8,7 @@ export function AboutMe() {
   return (
     <Container id="sobre-mim">
       <motion.div
+      className="grid-wrapper"
         initial={{ opacity: 0, width: 0 }}
         animate={{ opacity: 1, width: "100%" }}
         exit={{
@@ -25,7 +26,7 @@ export function AboutMe() {
           />
           <div className="about">
             <p>
-              Olá! Meu nome é <span>Juliana Barbosa de Alencar</span> <br />{" "}
+              Olá! Meu nome é <span>Juliana Barbosa de Alencar</span>{" "}
               <Link
                 target="_blank"
                 to="http://www.cadastro.cfp.org.br/visualizar.html?profissional=tsOqVp%2FWVCkj4LWJQG%2BXVZPJmYH2OIVS2NfhBvbpWyw%3D"

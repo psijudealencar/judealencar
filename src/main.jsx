@@ -15,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Header />
+        <div style={{height: "5rem"}}/>
         <App />
       </ThemeProvider>
     </BrowserRouter>

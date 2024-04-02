@@ -10,16 +10,17 @@ const scaleUpCenter = keyframes`
 `;
 
 export const Container = styled.div`
-  height: 100dvh;
+  height: calc(100dvh - 5rem);
 
   position: relative;
   background: ${({ theme }) => theme.COLORS.CREAM};
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding-inline: 10%;
 
   .title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-family: ${({ theme }) => theme.FONTS.INNER_FONT};
     color: ${({ theme }) => theme.COLORS.GREEN};
     font-size: clamp(2rem, calc(2rem + 2vw), 3rem);
@@ -30,14 +31,12 @@ export const Container = styled.div`
 
   .flex-wrapper {
     display: grid;
-    margin: 2rem 0;
   }
 
   .flex-wrapper ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-right: auto;
     margin-bottom: 2rem;
 
     li {
@@ -157,6 +156,8 @@ export const Container = styled.div`
 
   /* Desktop */
   @media (min-width: 600px) {
+    justify-content: center;
+
     .flex-wrapper {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 5%;
@@ -170,8 +171,6 @@ export const Container = styled.div`
     .title {
       font-size: clamp(3rem, calc(2rem + 2vw), 5rem);
 
-      position: absolute;
-      top: 15rem;
       max-width: max-content;
     }
 

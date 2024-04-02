@@ -1,18 +1,22 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 100dvh;
+    height: calc(100dvh - 5rem);
     
     position: relative;
     padding-inline: 10%;
     background: ${({ theme }) => theme.COLORS.GREY};
 
-    display: grid;
-    place-content: center;
-
     font-family: ${({ theme }) => theme.FONTS.MAIN_FONT};
-    font-size: clamp(1.2rem, calc(1rem + 1vw), 2rem);
+    font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
     text-align: justify;
+
+    .grid-wrapper {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-rows: max-content 1fr;
+        gap: 2rem;
+    }
 
     .title {
         color: ${({ theme }) => theme.COLORS.PURPLE};
@@ -21,11 +25,11 @@ export const Container = styled.div`
     }
 
     .profile-pic {
-        margin: 2rem 0;
         object-fit: cover;
         border-radius: 8rem;
         box-shadow: .7rem .7rem .5rem rgba(0, 0, 0, 0.4);
         height: auto;
+        margin-bottom: 2rem;
     }
 
     span {
@@ -34,6 +38,8 @@ export const Container = styled.div`
     
     /* Desktop */
     @media (min-width: 600px) {
+        display: grid;
+        place-content: center;
         .title {
             font-size: clamp( 3rem, calc(2rem + 2vw), 5rem);
         }
