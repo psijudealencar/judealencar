@@ -5,15 +5,6 @@ import { Link } from 'react-router-dom';
 export function Header() {
   const [isMobileHeader, setIsMobileHeader] = useState(true);
 
-  const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({
-        behavior: 'smooth',
-      });
-    }
-  };
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobileHeader(window.innerWidth <= 600);
@@ -28,13 +19,13 @@ export function Header() {
   return (
     <Container>
       <nav className={isMobileHeader ? "mobile" : "desktop"}>
-        <Link onClick={() => scrollToSection('home')} className="home" to="/">Início</Link>
-        <Link onClick={() => scrollToSection('sobre-mim')} className="sobre-mim" to="/sobre-mim">Sobre Mim</Link>
-        <Link onClick={() => scrollToSection('sobre-a-psicoterapia')} className="psicoterapia" to="/sobre-a-psicoterapia">
+        <Link className="home" to="/">Início</Link>
+        <Link className="sobre-mim" to="/sobre-mim">Sobre Mim</Link>
+        <Link className="psicoterapia" to="/sobre-a-psicoterapia">
           {isMobileHeader ? "Psicoterapia" : "Sobre a Psicoterapia"}
         </Link>
-        <Link onClick={() => scrollToSection('faq')} className="faq" to="/faq">{isMobileHeader ? "FAQ" : "Perguntas Frequentes"}</Link>
-        <Link onClick={() => scrollToSection('contato')} className="contato" to="/contato">Contato</Link>
+        <Link className="faq" to="/faq">{isMobileHeader ? "FAQ" : "Perguntas Frequentes"}</Link>
+        <Link className="contato" to="/contato">Contato</Link>
       </nav>
     </Container>
   );
