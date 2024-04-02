@@ -204,7 +204,7 @@ Error generating stack: `+o.message+`
     }
 `;function Nx(){const[e,t]=S.useState(!0);return S.useEffect(()=>{const n=()=>{t(window.innerWidth<=600)};return window.addEventListener("resize",n),n(),()=>window.removeEventListener("resize",n)},[]),x.jsx(Lx,{children:x.jsxs("nav",{className:e?"mobile":"desktop",children:[x.jsx(pt,{className:"home",to:"/",children:"Início"}),x.jsx(pt,{className:"sobre-mim",to:"/sobre-mim",children:"Sobre Mim"}),x.jsx(pt,{className:"psicoterapia",to:"/sobre-a-psicoterapia",children:e?"Psicoterapia":"Sobre a Psicoterapia"}),x.jsx(pt,{className:"faq",to:"/faq",children:e?"FAQ":"Perguntas Frequentes"}),x.jsx(pt,{className:"contato",to:"/contato",children:"Contato"})]})})}const Mx=Un.div`
     .content {
-    height: 100dvh;
+    height: calc(100dvh - 5rem);
 
     position: relative;
     background: ${({theme:e})=>e.COLORS.CREAM};
@@ -220,12 +220,12 @@ Error generating stack: `+o.message+`
     }
 
     .top {
-        height: 12vh;
+        height: 5vh;
         top: 0;
     }
 
     .bottom {
-        height: 7vh;
+        height: 5vh;
         bottom: 0;
     }
 
@@ -294,18 +294,22 @@ Error generating stack: `+o.message+`
             left: ${u}px !important;
           }
         `),()=>{document.head.removeChild(c)}},[t]),S.createElement(ZE,{isPresent:t,childRef:r,sizeRef:i},S.cloneElement(e,{ref:r}))}const Ga=({children:e,initial:t,isPresent:n,onExitComplete:r,custom:i,presenceAffectsLayout:o,mode:s})=>{const a=Kg(ek),l=S.useId(),u=S.useMemo(()=>({id:l,initial:t,isPresent:n,custom:i,onExitComplete:c=>{a.set(c,!0);for(const f of a.values())if(!f)return;r&&r()},register:c=>(a.set(c,!1),()=>a.delete(c))}),o?void 0:[n]);return S.useMemo(()=>{a.forEach((c,f)=>a.set(f,!1))},[n]),S.useEffect(()=>{!n&&!a.size&&r&&r()},[n]),s==="popLayout"&&(e=S.createElement(JE,{isPresent:n},e)),S.createElement(Ys.Provider,{value:u},e)};function ek(){return new Map}function tk(e){return S.useEffect(()=>()=>e(),[])}const Pn=e=>e.key||"";function nk(e,t){e.forEach(n=>{const r=Pn(n);t.set(r,n)})}function rk(e){const t=[];return S.Children.forEach(e,n=>{S.isValidElement(n)&&t.push(n)}),t}const ik=({children:e,custom:t,initial:n=!0,onExitComplete:r,exitBeforeEnter:i,presenceAffectsLayout:o=!0,mode:s="sync"})=>{const a=S.useContext(Ec).forceRender||XE()[0],l=Yv(),u=rk(e);let c=u;const f=S.useRef(new Map).current,d=S.useRef(c),g=S.useRef(new Map).current,v=S.useRef(!0);if(wc(()=>{v.current=!1,nk(u,g),d.current=c}),tk(()=>{v.current=!0,g.clear(),f.clear()}),v.current)return S.createElement(S.Fragment,null,c.map(p=>S.createElement(Ga,{key:Pn(p),isPresent:!0,initial:n?void 0:!1,presenceAffectsLayout:o,mode:s},p)));c=[...c];const y=d.current.map(Pn),C=u.map(Pn),m=y.length;for(let p=0;p<m;p++){const h=y[p];C.indexOf(h)===-1&&!f.has(h)&&f.set(h,void 0)}return s==="wait"&&f.size&&(c=[]),f.forEach((p,h)=>{if(C.indexOf(h)!==-1)return;const w=g.get(h);if(!w)return;const P=y.indexOf(h);let E=p;if(!E){const k=()=>{f.delete(h);const T=Array.from(g.keys()).filter(O=>!C.includes(O));if(T.forEach(O=>g.delete(O)),d.current=u.filter(O=>{const L=Pn(O);return L===h||T.includes(L)}),!f.size){if(l.current===!1)return;a(),r&&r()}};E=S.createElement(Ga,{key:Pn(w),isPresent:!1,onExitComplete:k,custom:t,presenceAffectsLayout:o,mode:s},w),f.set(h,E)}c.splice(P,0,E)}),c=c.map(p=>{const h=p.key;return f.has(h)?p:S.createElement(Ga,{key:Pn(p),isPresent:!0,presenceAffectsLayout:o,mode:s},p)}),S.createElement(S.Fragment,null,f.size?c:c.map(p=>S.cloneElement(p)))};function ok(){const e=Ag();return x.jsx(Mx,{id:"home",children:x.jsxs(Qi.div,{className:"content",initial:{opacity:0,width:0},animate:{opacity:1,width:"100%"},exit:{opacity:0,x:window.innerWidth,transition:{duration:.1}},children:[x.jsx("div",{className:"banner top"}),x.jsxs("div",{className:"flex-wrapper",children:[x.jsx("img",{src:e?Bx:jg,alt:"Logo Juliana de Alencar"}),x.jsx("button",{children:x.jsxs("a",{href:"https://wa.me/5548998468897",target:"_blank",rel:"noopener noreferrer",children:[x.jsx(Rg,{size:"3rem"}),"agende uma sessão"]})})]}),x.jsxs("p",{children:["Deixe tudo acontecer a você ",x.jsx("br",{}),"Beleza e terror ",x.jsx("br",{}),"Apenas continue ",x.jsx("br",{}),"Nenhum sentimento é final ",x.jsx("br",{}),x.jsx("br",{}),x.jsx("span",{children:"Rainer Maria Rilke"})]}),x.jsx("div",{className:"banner bottom"})]})})}const sk=Un.div`
-    height: 100dvh;
+    height: calc(100dvh - 5rem);
     
     position: relative;
     padding-inline: 10%;
     background: ${({theme:e})=>e.COLORS.GREY};
 
-    display: grid;
-    place-content: center;
-
     font-family: ${({theme:e})=>e.FONTS.MAIN_FONT};
-    font-size: clamp(1.2rem, calc(1rem + 1vw), 2rem);
+    font-size: clamp(1rem, calc(1rem + 1vw), 2rem);
     text-align: justify;
+
+    .grid-wrapper {
+        padding-top: 2rem;
+        display: grid;
+        grid-template-rows: max-content 1fr;
+        gap: 2rem;
+    }
 
     .title {
         color: ${({theme:e})=>e.COLORS.PURPLE};
@@ -314,11 +318,11 @@ Error generating stack: `+o.message+`
     }
 
     .profile-pic {
-        margin: 2rem 0;
         object-fit: cover;
         border-radius: 8rem;
         box-shadow: .7rem .7rem .5rem rgba(0, 0, 0, 0.4);
         height: auto;
+        margin-bottom: 2rem;
     }
 
     span {
@@ -327,6 +331,8 @@ Error generating stack: `+o.message+`
     
     /* Desktop */
     @media (min-width: 600px) {
+        display: grid;
+        place-content: center;
         .title {
             font-size: clamp( 3rem, calc(2rem + 2vw), 5rem);
         }
@@ -347,14 +353,14 @@ Error generating stack: `+o.message+`
             column-gap: 10rem;
         }
     }
-`,Xv="/assets/logo-green-PouaJL_i.png",ak="/assets/aboutMe-b4CXppSy.png";function lk(){return x.jsx(sk,{id:"sobre-mim",children:x.jsxs(Qi.div,{initial:{opacity:0,width:0},animate:{opacity:1,width:"100%"},exit:{opacity:0,x:window.innerWidth,transition:{duration:.5}},children:[x.jsx("h1",{className:"title",children:"sobre mim"}),x.jsxs("div",{className:"flex-wrapper",children:[x.jsx("img",{className:"profile-pic",src:ak,alt:"Imagem de Juliana de Alencar com a mão no queixo e olhando para baixo"}),x.jsxs("div",{className:"about",children:[x.jsxs("p",{children:["Olá! Meu nome é ",x.jsx("span",{children:"Juliana Barbosa de Alencar"})," ",x.jsx("br",{})," ",x.jsx(pt,{target:"_blank",to:"http://www.cadastro.cfp.org.br/visualizar.html?profissional=tsOqVp%2FWVCkj4LWJQG%2BXVZPJmYH2OIVS2NfhBvbpWyw%3D",children:"(CRP 12/20214)"})," ","e sou ",x.jsx("span",{children:"psicóloga"})," formada pela Universidade Federal de Santa Catarina (UFSC) e atuo como psicóloga clínica pela abordagem do ",x.jsx("span",{children:"Construcionismo Social"}),", uma vertente da Terapia Sistêmica."]}),x.jsxs("p",{className:"ident",children:["Sou ",x.jsx("span",{children:"Mestre em Artes Cênicas"})," pela Universidade do Estado de Santa Catarina (UDESC) e procuro exercer uma clínica atravessada também pela"," ",x.jsx("span",{children:"sensibilidade, poética, escuta afetiva, potente, sensibilidade às vulnerabilidades"}),", e principalmente, baseada numa ",x.jsx("span",{children:"psicologia ética"}),".",x.jsx("br",{}),"Ofereço atendimento online e presencial para adolescentes, jovens e adultos."]})]})]}),x.jsx("img",{className:"logo",src:Xv,alt:"Logo Juliana de Alencar"})]})})}const uk=Un.div`
-  height: 100dvh;
+`,Xv="/assets/logo-green-PouaJL_i.png",ak="/assets/aboutMe-b4CXppSy.png";function lk(){return x.jsx(sk,{id:"sobre-mim",children:x.jsxs(Qi.div,{className:"grid-wrapper",initial:{opacity:0,width:0},animate:{opacity:1,width:"100%"},exit:{opacity:0,x:window.innerWidth,transition:{duration:.5}},children:[x.jsx("h1",{className:"title",children:"sobre mim"}),x.jsxs("div",{className:"flex-wrapper",children:[x.jsx("img",{className:"profile-pic",src:ak,alt:"Imagem de Juliana de Alencar com a mão no queixo e olhando para baixo"}),x.jsxs("div",{className:"about",children:[x.jsxs("p",{children:["Olá! Meu nome é ",x.jsx("span",{children:"Juliana Barbosa de Alencar"})," ",x.jsx(pt,{target:"_blank",to:"http://www.cadastro.cfp.org.br/visualizar.html?profissional=tsOqVp%2FWVCkj4LWJQG%2BXVZPJmYH2OIVS2NfhBvbpWyw%3D",children:"(CRP 12/20214)"})," ","e sou ",x.jsx("span",{children:"psicóloga"})," formada pela Universidade Federal de Santa Catarina (UFSC) e atuo como psicóloga clínica pela abordagem do ",x.jsx("span",{children:"Construcionismo Social"}),", uma vertente da Terapia Sistêmica."]}),x.jsxs("p",{className:"ident",children:["Sou ",x.jsx("span",{children:"Mestre em Artes Cênicas"})," pela Universidade do Estado de Santa Catarina (UDESC) e procuro exercer uma clínica atravessada também pela"," ",x.jsx("span",{children:"sensibilidade, poética, escuta afetiva, potente, sensibilidade às vulnerabilidades"}),", e principalmente, baseada numa ",x.jsx("span",{children:"psicologia ética"}),".",x.jsx("br",{}),"Ofereço atendimento online e presencial para adolescentes, jovens e adultos."]})]})]}),x.jsx("img",{className:"logo",src:Xv,alt:"Logo Juliana de Alencar"})]})})}const uk=Un.div`
+  height: calc(100dvh - 5rem);
 
   position: relative;
   background: ${({theme:e})=>e.COLORS.GREEN};
   padding-inline: 10%;
   display: grid;
-  place-content: center;
+  padding-top: 2rem;
 
   .title {
     font-family: ${({theme:e})=>e.FONTS.MAIN_FONT};
@@ -365,7 +371,7 @@ Error generating stack: `+o.message+`
   }
 
   .flex-wrapper {
-    margin-top: 15%;
+    margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -391,10 +397,9 @@ Error generating stack: `+o.message+`
 
   /* Desktop */
   @media (min-width: 600px) {
+    align-items: center;
+
     .title {
-      position: relative;
-      top: -10rem;
-      left: -10rem;
       max-width: max-content;
       font-size: clamp(3rem, calc(2rem + 2vw), 5rem);
     }
@@ -423,16 +428,17 @@ Error generating stack: `+o.message+`
     transform: scale(1);
   }
 `,wk=Un.div`
-  height: 100dvh;
+  height: calc(100dvh - 5rem);
 
   position: relative;
   background: ${({theme:e})=>e.COLORS.CREAM};
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding-inline: 10%;
 
   .title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     font-family: ${({theme:e})=>e.FONTS.INNER_FONT};
     color: ${({theme:e})=>e.COLORS.GREEN};
     font-size: clamp(2rem, calc(2rem + 2vw), 3rem);
@@ -443,14 +449,12 @@ Error generating stack: `+o.message+`
 
   .flex-wrapper {
     display: grid;
-    margin: 2rem 0;
   }
 
   .flex-wrapper ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-right: auto;
     margin-bottom: 2rem;
 
     li {
@@ -570,6 +574,8 @@ Error generating stack: `+o.message+`
 
   /* Desktop */
   @media (min-width: 600px) {
+    justify-content: center;
+
     .flex-wrapper {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 5%;
@@ -583,8 +589,6 @@ Error generating stack: `+o.message+`
     .title {
       font-size: clamp(3rem, calc(2rem + 2vw), 5rem);
 
-      position: absolute;
-      top: 15rem;
       max-width: max-content;
     }
 
@@ -607,9 +611,9 @@ Error generating stack: `+o.message+`
       }
     }
   }
-`,xk="/assets/logo-black-wUmAgBDT.png",Sk=[{question:"Como a psicoterapia funciona e por que ela funciona?",answer:x.jsxs(x.Fragment,{children:[x.jsxs("div",{className:"row-start",children:[x.jsx("h1",{children:"Como a psicoterapia funciona e por que ela funciona?"}),x.jsx("p",{children:"A terapia funciona na medida em que ela oferece e constrói um contexto de relação que a pessoa pode refletir e experimentar a si mesma, e seus problemas, os seus dilemas e questões que ela vive sobre a vida, de maneiras inéditas e diferentes."})]}),x.jsx("div",{className:"row-end",children:x.jsx("p",{className:"ident",children:"Então, a função da terapeuta é construir esse espaço para que essa diferença possa surgir. E ela funciona a partir de alguns elementos principalmente desse vínculo que se constrói e da possibilidade de se ir para lugares outros na vida."})})]})},{question:"Como funciona a abordagem do Construcionismo Social?",answer:x.jsxs(x.Fragment,{children:[x.jsxs("div",{className:"row-start",children:[x.jsx("h1",{children:"Como funciona a terapia a partir da abordagem do Construcionismo Social?"}),x.jsx("p",{children:"Construcionismo social pensa a terapia como um contexto de produção de sentidos e significados e isso é feito nas relações. Então os dois conceitos principais são: a linguagem e o relacionamento paciente-psicoterapeuta, ou seja, o que a gente faz junto na sessão. O foco é como a gente constrói um contexto de linguagem e relacionamento que as pessoas possam produzir sentidos sobre as situações de vida que elas estão passando, seus problemas, quem são elas e o que se pode fazer a partir disso."}),x.jsx("p",{className:"ident",children:"Na prática, isso significa que a conversa terapêutica não é orientada por nenhum objetivo dado a priori. Essas coisas são construídas, a própria demanda é construída na relação. E todas as teorias e técnicas são compreendidas como recursos que potencialmente ajudam a construir hipóteses, fazer perguntas, a oferecer entendimentos a partir dos quais vamos sempre ofertar para que a pessoa possa dizer se faz sentido ou não, ou seja, a construção."})]}),x.jsx("div",{className:"row-end",children:x.jsx("p",{className:"ident",children:"A ideia do social tem duas implicações. A primeira é a do micro-social, do que a gente está fazendo junto na sessão e vem em contraposição com a ideia de um indivíduo autocontido. Então a função da terapeuta não é julgar, nem buscar dentro das pessoas as respostas, mas entender que é no contexto das conversações que vamos encontrando formas de seguir junto. E tem o social que é o macro-social, no qual estamos sempre atentas a como o dilema da pessoa, as coisas que elas vivem e o que conversamos,  é composto e atravessado com a nossa forma de viver em sociedade. É uma conversa de cada vez, na qual vamos produzindo entendimento, ação, significado, sentimento."})})]})},{question:"Quem pode ou deve fazer sessões com uma psicóloga?",answer:x.jsxs(x.Fragment,{children:[x.jsxs("div",{className:"row-start",children:[x.jsx("h1",{children:"Quem pode ou deve fazer sessões com uma psicóloga?"}),x.jsx("p",{children:"Indo direto ao ponto: não é “coisa de gente louca” e qualquer pessoa pode fazê-la. Essa associação à loucura se deve muito às origens históricas da psicologia como profissão, principalmente pela forte relação com os tratamentos em hospitais psiquiátricos durante o século passado aqui no Brasil."})]}),x.jsxs("div",{className:"row-end",children:[x.jsx("p",{className:"ident",children:"Hoje o cenário é muito diferente, mas essa imagem ainda preconcebida ainda permanece em boa parte da população. Ainda hoje se realizam atendimentos a casos bastante delicados (ex: psicoses, transtornos dissociativos, de personalidade, entre outros) em hospitais e clínicas, mas a atuação do psicólogo é muito mais abrangente. Eu coloquei propositalmente “sessões com um psicólogo” porque os atendimentos não se resumem a trabalhar sobre os transtornos psicológicos."}),x.jsx("p",{className:"ident",children:"Qualquer pessoa pode recorrer a esse atendimento independente de idade, crenças, capacidades cognitivas, tipo de problemas ou situações pelas quais está passando."})]})]})},{question:"A Psicoterapia é mais do que “conversar”?",answer:x.jsxs(x.Fragment,{children:[x.jsxs("div",{className:"row-start",children:[x.jsx("h1",{children:"A Psicoterapia é mais do que “conversar”?"}),x.jsx("p",{children:"Algumas pessoas costumam perguntar “Por que a psicoterapia pode me ajudar? Sempre falo dos meus problemas com amigos, e falar não muda nada”. É muito bom termos amigos que estão disponíveis para nós e prontos para nos escutar. Mas se conversar com os amigos não resolve o seu problema, pode ser que o tipo de conversa que acontece seja apenas isso: “conversa”."}),x.jsx("p",{className:"ident",children:"Ao contrário, a natureza da “conversa” que acontece no contexto da psicoterapia está ligada em um processo mais profundo de autoconhecimento e mudança pessoal. Conversar é apenas “a ponta do iceberg” onde ocorre o processo mais profundo. A “fala” ou “conversa” é apenas um componente óbvio do processo, ocorrendo muito mais que isso ao nível cognitivo e emocional."})]}),x.jsxs("div",{className:"row-end",children:[x.jsx("p",{className:"ident",children:"Apesar da troca de palavras ocorrida entre cliente e psicóloga possa parecer a forma mais óbvia de comunicação, na realidade a terapia pode oferecer uma experiência muito mais rica do que uma mera troca de palavras e conselhos."}),x.jsx("p",{className:"ident",children:"Porque ao falar, nos escutamos, e temos a oportunidade de ressignificar o que aconteceu. É como se ao mudarmos nossa forma de pensar e enxergar o mundo, temos a oportunidade de viver de uma forma diferente."}),x.jsx("p",{className:"ident",children:"Os pensamentos e sentimentos partilhados pela cliente e as técnicas utilizadas pela psicóloga são, contudo, muito menos importantes do que a relação terapêutica construída entre a dupla. A relação estabelecida com a terapeuta é essencial para a eficácia do processo, por isso é muito importante que o cliente encontre uma profissional com a qual consiga estabelecer uma relação segura, com confiança e confortável, uma profissional que a faça sentir-se ouvida e compreendida."})]})]})}];function Ck(){const[e,t]=S.useState(null),n=s=>{s===e?(t(null),i()):(t(s),r())};function r(){document.body.style.overflow="hidden"}function i(){document.body.style.overflow=""}const o=()=>{t(null),i()};return x.jsx(wk,{id:"faq",children:x.jsxs(Qi.div,{initial:{opacity:0,width:0},animate:{opacity:1,width:"100%"},exit:{opacity:0,x:window.innerWidth,transition:{duration:.1}},children:[x.jsx("h1",{className:"title",children:"perguntas frequentes"}),x.jsxs("div",{className:"flex-wrapper",children:[x.jsx("ul",{children:Sk.map((s,a)=>x.jsxs("li",{children:[x.jsxs("div",{className:"question",children:[x.jsx("span",{children:s.question}),x.jsx("button",{className:"plus",onClick:()=>n(a),children:x.jsx(gk,{size:"2rem"})})]}),e===a&&x.jsx("div",{className:"answer-overlay",children:x.jsxs("div",{className:e!==null?"answer open":"answer closed",children:[x.jsx("div",{className:"text",children:s.answer}),x.jsx("button",{className:"minus",onClick:o,children:x.jsx(vk,{size:"3rem"})})]})})]},a))}),x.jsxs("p",{className:"poem",children:["Peço-lhe, tanto quanto puder, caro senhor, que seja paciente com tudo o que não esteja resolvido em seu coração e tente ter amor pelas próprias perguntas, como se fossem quartos trancados ou livros escritos em uma língua estrangeira. Não busque agora as respostas que não lhe podem ser dadas, porque não poderia vivê-las. E é disso que se trata, de viver tudo. Viva agora as perguntas. Talvez, então, gradativamente, sem notar, em algum dia distante, você venha viver nas respostas.",x.jsx("br",{}),x.jsx("span",{children:"Rainer Maria Rilke, em Cartas a um Jovem Poeta"})]})]}),x.jsx("img",{className:"logo",src:xk,alt:"Logo Juliana de Alencar"})]})})}const Pk=Un.div`
+`,xk="/assets/logo-black-wUmAgBDT.png",Sk=[{question:"Como a psicoterapia funciona e por que ela funciona?",answer:x.jsxs(x.Fragment,{children:[x.jsxs("div",{className:"row-start",children:[x.jsx("h1",{children:"Como a psicoterapia funciona e por que ela funciona?"}),x.jsx("p",{children:"A terapia funciona na medida em que ela oferece e constrói um contexto de relação que a pessoa pode refletir e experimentar a si mesma, e seus problemas, os seus dilemas e questões que ela vive sobre a vida, de maneiras inéditas e diferentes."})]}),x.jsx("div",{className:"row-end",children:x.jsx("p",{className:"ident",children:"Então, a função da terapeuta é construir esse espaço para que essa diferença possa surgir. E ela funciona a partir de alguns elementos principalmente desse vínculo que se constrói e da possibilidade de se ir para lugares outros na vida."})})]})},{question:"Como funciona a abordagem do Construcionismo Social?",answer:x.jsxs(x.Fragment,{children:[x.jsxs("div",{className:"row-start",children:[x.jsx("h1",{children:"Como funciona a terapia a partir da abordagem do Construcionismo Social?"}),x.jsx("p",{children:"Construcionismo social pensa a terapia como um contexto de produção de sentidos e significados e isso é feito nas relações. Então os dois conceitos principais são: a linguagem e o relacionamento paciente-psicoterapeuta, ou seja, o que a gente faz junto na sessão. O foco é como a gente constrói um contexto de linguagem e relacionamento que as pessoas possam produzir sentidos sobre as situações de vida que elas estão passando, seus problemas, quem são elas e o que se pode fazer a partir disso."}),x.jsx("p",{className:"ident",children:"Na prática, isso significa que a conversa terapêutica não é orientada por nenhum objetivo dado a priori. Essas coisas são construídas, a própria demanda é construída na relação. E todas as teorias e técnicas são compreendidas como recursos que potencialmente ajudam a construir hipóteses, fazer perguntas, a oferecer entendimentos a partir dos quais vamos sempre ofertar para que a pessoa possa dizer se faz sentido ou não, ou seja, a construção."})]}),x.jsx("div",{className:"row-end",children:x.jsx("p",{className:"ident",children:"A ideia do social tem duas implicações. A primeira é a do micro-social, do que a gente está fazendo junto na sessão e vem em contraposição com a ideia de um indivíduo autocontido. Então a função da terapeuta não é julgar, nem buscar dentro das pessoas as respostas, mas entender que é no contexto das conversações que vamos encontrando formas de seguir junto. E tem o social que é o macro-social, no qual estamos sempre atentas a como o dilema da pessoa, as coisas que elas vivem e o que conversamos,  é composto e atravessado com a nossa forma de viver em sociedade. É uma conversa de cada vez, na qual vamos produzindo entendimento, ação, significado, sentimento."})})]})},{question:"Quem pode ou deve fazer sessões com uma psicóloga?",answer:x.jsxs(x.Fragment,{children:[x.jsxs("div",{className:"row-start",children:[x.jsx("h1",{children:"Quem pode ou deve fazer sessões com uma psicóloga?"}),x.jsx("p",{children:"Indo direto ao ponto: não é “coisa de gente louca” e qualquer pessoa pode fazê-la. Essa associação à loucura se deve muito às origens históricas da psicologia como profissão, principalmente pela forte relação com os tratamentos em hospitais psiquiátricos durante o século passado aqui no Brasil."})]}),x.jsxs("div",{className:"row-end",children:[x.jsx("p",{className:"ident",children:"Hoje o cenário é muito diferente, mas essa imagem ainda preconcebida ainda permanece em boa parte da população. Ainda hoje se realizam atendimentos a casos bastante delicados (ex: psicoses, transtornos dissociativos, de personalidade, entre outros) em hospitais e clínicas, mas a atuação do psicólogo é muito mais abrangente. Eu coloquei propositalmente “sessões com um psicólogo” porque os atendimentos não se resumem a trabalhar sobre os transtornos psicológicos."}),x.jsx("p",{className:"ident",children:"Qualquer pessoa pode recorrer a esse atendimento independente de idade, crenças, capacidades cognitivas, tipo de problemas ou situações pelas quais está passando."})]})]})},{question:"A Psicoterapia é mais do que “conversar”?",answer:x.jsxs(x.Fragment,{children:[x.jsxs("div",{className:"row-start",children:[x.jsx("h1",{children:"A Psicoterapia é mais do que “conversar”?"}),x.jsx("p",{children:"Algumas pessoas costumam perguntar “Por que a psicoterapia pode me ajudar? Sempre falo dos meus problemas com amigos, e falar não muda nada”. É muito bom termos amigos que estão disponíveis para nós e prontos para nos escutar. Mas se conversar com os amigos não resolve o seu problema, pode ser que o tipo de conversa que acontece seja apenas isso: “conversa”."}),x.jsx("p",{className:"ident",children:"Ao contrário, a natureza da “conversa” que acontece no contexto da psicoterapia está ligada em um processo mais profundo de autoconhecimento e mudança pessoal. Conversar é apenas “a ponta do iceberg” onde ocorre o processo mais profundo. A “fala” ou “conversa” é apenas um componente óbvio do processo, ocorrendo muito mais que isso ao nível cognitivo e emocional."})]}),x.jsxs("div",{className:"row-end",children:[x.jsx("p",{className:"ident",children:"Apesar da troca de palavras ocorrida entre cliente e psicóloga possa parecer a forma mais óbvia de comunicação, na realidade a terapia pode oferecer uma experiência muito mais rica do que uma mera troca de palavras e conselhos."}),x.jsx("p",{className:"ident",children:"Porque ao falar, nos escutamos, e temos a oportunidade de ressignificar o que aconteceu. É como se ao mudarmos nossa forma de pensar e enxergar o mundo, temos a oportunidade de viver de uma forma diferente."}),x.jsx("p",{className:"ident",children:"Os pensamentos e sentimentos partilhados pela cliente e as técnicas utilizadas pela psicóloga são, contudo, muito menos importantes do que a relação terapêutica construída entre a dupla. A relação estabelecida com a terapeuta é essencial para a eficácia do processo, por isso é muito importante que o cliente encontre uma profissional com a qual consiga estabelecer uma relação segura, com confiança e confortável, uma profissional que a faça sentir-se ouvida e compreendida."})]})]})}];function Ck(){const[e,t]=S.useState(null),n=s=>{s===e?(t(null),i()):(t(s),r())};function r(){document.body.style.overflow="hidden"}function i(){document.body.style.overflow=""}const o=()=>{t(null),i()};return x.jsx(wk,{id:"faq",children:x.jsxs(Qi.div,{className:"grid-wrapper",initial:{opacity:0,width:0},animate:{opacity:1,width:"100%"},exit:{opacity:0,x:window.innerWidth,transition:{duration:.1}},children:[x.jsx("h1",{className:"title",children:"perguntas frequentes"}),x.jsxs("div",{className:"flex-wrapper",children:[x.jsx("ul",{children:Sk.map((s,a)=>x.jsxs("li",{children:[x.jsxs("div",{className:"question",children:[x.jsx("span",{children:s.question}),x.jsx("button",{className:"plus",onClick:()=>n(a),children:x.jsx(gk,{size:"2rem"})})]}),e===a&&x.jsx("div",{className:"answer-overlay",children:x.jsxs("div",{className:e!==null?"answer open":"answer closed",children:[x.jsx("div",{className:"text",children:s.answer}),x.jsx("button",{className:"minus",onClick:o,children:x.jsx(vk,{size:"3rem"})})]})})]},a))}),x.jsxs("p",{className:"poem",children:["Peço-lhe, tanto quanto puder, caro senhor, que seja paciente com tudo o que não esteja resolvido em seu coração e tente ter amor pelas próprias perguntas, como se fossem quartos trancados ou livros escritos em uma língua estrangeira. Não busque agora as respostas que não lhe podem ser dadas, porque não poderia vivê-las. E é disso que se trata, de viver tudo. Viva agora as perguntas. Talvez, então, gradativamente, sem notar, em algum dia distante, você venha viver nas respostas.",x.jsx("br",{}),x.jsx("span",{children:"Rainer Maria Rilke, em Cartas a um Jovem Poeta"})]})]}),x.jsx("img",{className:"logo",src:xk,alt:"Logo Juliana de Alencar"})]})})}const Pk=Un.div`
   .content {
-    height: 100dvh;
+    height: calc(100dvh - 5rem);
 
     background: ${({theme:e})=>e.COLORS.PURPLE};
     font-family: ${({theme:e})=>e.FONTS.MAIN_FONT};
@@ -629,10 +633,6 @@ Error generating stack: `+o.message+`
       justify-content: center;
       align-items: center;
       gap: 1rem;
-    }
-
-    .logoGreen {
-      margin-top: 7vh;
     }
 
     span {
@@ -685,7 +685,7 @@ Error generating stack: `+o.message+`
     }
 
     iframe {
-      min-height: 30rem;
+      min-height: 20rem;
       border-radius: 4rem;
       border-style: none;
       min-width: 100%;
@@ -743,4 +743,4 @@ Error generating stack: `+o.message+`
       }
     }
   }
-`,Ek="/assets/logo-green-square-qHs0gnQA.png";function kk(){const e=Ag();return x.jsx(Pk,{id:"contato",children:x.jsxs(Qi.div,{className:"content",initial:{opacity:0,width:0},animate:{opacity:1,width:"100%"},exit:{opacity:0,x:window.innerWidth,transition:{duration:.1}},children:[x.jsxs("div",{className:"flex-wrapper",children:[x.jsx("img",{className:"logoGreen",src:e?Xv:Ek,alt:"Logo Juliana de Alencar"}),x.jsxs(pt,{className:"instalogo",to:"https://instagram.com/psi.judealencar",target:"_blank",rel:"noopener noreferrer",children:[x.jsx($x,{})," ",x.jsx("span",{children:"@psi.judealencar"})]}),x.jsx("button",{children:x.jsxs(pt,{to:"https://wa.me/5548998468897",target:"_blank",rel:"noopener noreferrer",children:[x.jsx(Rg,{className:"wpplogo"}),"Agende uma sessão"]})})]}),x.jsxs("div",{className:"maps",children:[x.jsxs("h1",{children:["Madison Center",x.jsx("br",{}),x.jsx("span",{children:"R. Des. Vítor Lima, 260 - Trindade, Florianópolis - SC"})]}),x.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.89614633986!2d-48.52493182361805!3d-27.596749222133255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273854425e9a11%3A0x2d9abdd871aa875d!2sR.%20Des.%20V%C3%ADtor%20Lima%2C%20260%20-%20Trindade%2C%20Florian%C3%B3polis%20-%20SC%2C%2088040-401%2C%20Brasil!5e0!3m2!1spt-BR!2spt!4v1706550343664!5m2!1spt-BR!2spt",allowFullScreen:"",loading:"lazy",referrerPolicy:"no-referrer-when-downgrade"})]})]})})}function Tk(){const e=Wi();return S.useEffect(()=>{const t=()=>{let n=window.innerHeight*.01;document.documentElement.style.setProperty("--svh",`${n}px`)};return t(),window.addEventListener("resize",t),()=>window.removeEventListener("resize",t)},[]),x.jsxs(ik,{children:[x.jsxs(yx,{location:e,children:[x.jsx(qn,{path:"/",element:x.jsx(ok,{})}),x.jsx(qn,{path:"/sobre-mim",element:x.jsx(lk,{})}),x.jsx(qn,{path:"/sobre-a-psicoterapia",element:x.jsx(mk,{})}),x.jsx(qn,{path:"/faq",element:x.jsx(Ck,{})}),x.jsx(qn,{path:"/contato",element:x.jsx(kk,{})})]},e.pathname),x.jsxs("footer",{style:{padding:"1rem",fontSize:"1.4rem"},children:["site por"," ",x.jsx(pt,{to:"https://linkedin.com/in/CristianValim",target:"_blank",children:"cris"})," ","e ",x.jsx(pt,{to:"https://linkedin.com/in/laissanseverino",target:"_blank",children:"lais"})]})]})}qa.createRoot(document.getElementById("root")).render(x.jsx(Z.StrictMode,{children:x.jsx(Ex,{children:x.jsxs(Pw,{theme:jx,children:[x.jsx(Ax,{}),x.jsx(Nx,{}),x.jsx(Tk,{})]})})}));
+`,Ek="/assets/logo-green-square-qHs0gnQA.png";function kk(){const e=Ag();return x.jsx(Pk,{id:"contato",children:x.jsxs(Qi.div,{className:"content",initial:{opacity:0,width:0},animate:{opacity:1,width:"100%"},exit:{opacity:0,x:window.innerWidth,transition:{duration:.1}},children:[x.jsxs("div",{className:"flex-wrapper",children:[x.jsx("img",{className:"logoGreen",src:e?Xv:Ek,alt:"Logo Juliana de Alencar"}),x.jsxs(pt,{className:"instalogo",to:"https://instagram.com/psi.judealencar",target:"_blank",rel:"noopener noreferrer",children:[x.jsx($x,{})," ",x.jsx("span",{children:"@psi.judealencar"})]}),x.jsx("button",{children:x.jsxs(pt,{to:"https://wa.me/5548998468897",target:"_blank",rel:"noopener noreferrer",children:[x.jsx(Rg,{className:"wpplogo"}),"Agende uma sessão"]})})]}),x.jsxs("div",{className:"maps",children:[x.jsxs("h1",{children:["Madison Center",x.jsx("br",{}),x.jsx("span",{children:"R. Des. Vítor Lima, 260 - Trindade, Florianópolis - SC"})]}),x.jsx("iframe",{src:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.89614633986!2d-48.52493182361805!3d-27.596749222133255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273854425e9a11%3A0x2d9abdd871aa875d!2sR.%20Des.%20V%C3%ADtor%20Lima%2C%20260%20-%20Trindade%2C%20Florian%C3%B3polis%20-%20SC%2C%2088040-401%2C%20Brasil!5e0!3m2!1spt-BR!2spt!4v1706550343664!5m2!1spt-BR!2spt",allowFullScreen:"",loading:"lazy",referrerPolicy:"no-referrer-when-downgrade"})]})]})})}function Tk(){const e=Wi();return S.useEffect(()=>{const t=()=>{let n=window.innerHeight*.01;document.documentElement.style.setProperty("--svh",`${n}px`)};return t(),window.addEventListener("resize",t),()=>window.removeEventListener("resize",t)},[]),x.jsxs(ik,{children:[x.jsxs(yx,{location:e,children:[x.jsx(qn,{path:"/",element:x.jsx(ok,{})}),x.jsx(qn,{path:"/sobre-mim",element:x.jsx(lk,{})}),x.jsx(qn,{path:"/sobre-a-psicoterapia",element:x.jsx(mk,{})}),x.jsx(qn,{path:"/faq",element:x.jsx(Ck,{})}),x.jsx(qn,{path:"/contato",element:x.jsx(kk,{})})]},e.pathname),x.jsxs("footer",{style:{padding:"1rem",fontSize:"1.4rem"},children:["site por"," ",x.jsx(pt,{to:"https://linkedin.com/in/CristianValim",target:"_blank",children:"cris"})," ","e ",x.jsx(pt,{to:"https://linkedin.com/in/laissanseverino",target:"_blank",children:"lais"})]})]})}qa.createRoot(document.getElementById("root")).render(x.jsx(Z.StrictMode,{children:x.jsx(Ex,{children:x.jsxs(Pw,{theme:jx,children:[x.jsx(Ax,{}),x.jsx(Nx,{}),x.jsx("div",{style:{height:"5rem"}}),x.jsx(Tk,{})]})})}));
