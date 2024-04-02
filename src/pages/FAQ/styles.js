@@ -11,7 +11,6 @@ const scaleUpCenter = keyframes`
 
 export const Container = styled.div`
   height: 100dvh;
-  height: calc(var(--svh, 1dvh) * 100);
 
   position: relative;
   background: ${({ theme }) => theme.COLORS.CREAM};

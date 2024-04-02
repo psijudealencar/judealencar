@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Container = styled.div`
   .content {
     height: 100dvh;
-    height: calc(var(--svh, 1dvh) * 100);
 
     background: ${({ theme }) => theme.COLORS.PURPLE};
     font-family: ${({ theme }) => theme.FONTS.MAIN_FONT};

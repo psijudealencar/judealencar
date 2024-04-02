@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     .content {
-        height: 100dvh;
-    height: calc(var(--svh, 1dvh) * 100);
+    height: 100dvh;
 
     position: relative;
     background: ${({ theme }) => theme.COLORS.CREAM};
