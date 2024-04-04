@@ -10,7 +10,7 @@ const scaleUpCenter = keyframes`
 `;
 
 export const Container = styled.div`
-  height: calc(100dvh - 5rem);
+  height: 94.5vh;
 
   position: relative;
   background: ${({ theme }) => theme.COLORS.CREAM};
@@ -37,6 +37,7 @@ export const Container = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    margin-right: auto;
     margin-bottom: 2rem;
 
     li {
@@ -161,6 +162,10 @@ export const Container = styled.div`
     .flex-wrapper {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 5%;
+
+      ul {
+        margin-left: 12%;
+      }
 
       ul li {
         min-width: 15rem;

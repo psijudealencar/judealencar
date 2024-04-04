@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   .content {
-    height: calc(100dvh - 5rem);
+    height: 94.5vh;
 
     background: ${({ theme }) => theme.COLORS.PURPLE};
     font-family: ${({ theme }) => theme.FONTS.MAIN_FONT};

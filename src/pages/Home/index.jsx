@@ -12,9 +12,12 @@ export function Home() {
     <Container id="home">
       <motion.div
         className="content"
-        initial={{ opacity: 0, width: 0 }}
-        animate={{ opacity: 1, width: "100%" }}
-        exit={{ opacity: 0, x: window.innerWidth, transition: { duration: 0.1 } }}
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1}}
+        exit={{
+          opacity: 0,
+          transition: { duration: 0.5 },
+        }}
       >
         <div className="banner top"></div>
         <div className="flex-wrapper">

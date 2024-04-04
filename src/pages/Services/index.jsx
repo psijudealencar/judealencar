@@ -8,14 +8,20 @@ import icon3 from "../../assets/icon-3.png";
 import icon4 from "../../assets/icon-4.png";
 import icon5 from "../../assets/icon-5.png";
 import { motion } from "framer-motion";
+import { useIsMobileLogo } from "../../hooks/useIsMobileLogo";
 
 export function Services() {
+  const isMobileLogo = useIsMobileLogo();
+
   return (
     <Container id="sobre-a-psicoterapia">
       <motion.div
-        initial={{ opacity: 0, width: 0 }}
-        animate={{ opacity: 1, width: "100%" }}
-        exit={{ opacity: 0, x: window.innerWidth, transition: { duration: 0.1 } }}
+               initial={{ opacity: 0}}
+               animate={{ opacity: 1}}
+               exit={{
+                 opacity: 0,
+                 transition: { duration: 0.5 },
+                }}
       >
       <h1 className="title">sobre a psicoterapia</h1>
         <div className="flex-wrapper">
@@ -65,7 +71,7 @@ export function Services() {
           </figure>
         </div>
 
-        <img className="logo" src={logoPurple} alt="Logo Juliana de Alencar" />
+        <img style={{display: isMobileLogo ? "none" : "block"}} className="logo" src={logoPurple} alt="Logo Juliana de Alencar" />
       </motion.div>
     </Container>
   );

@@ -3,17 +3,19 @@ import { Container } from "./styles";
 import logoGreen from "../../assets/logo-green.png";
 import aboutMe from "../../assets/aboutMe.png";
 import { motion } from "framer-motion";
+import { useIsMobileLogo } from "../../hooks/useIsMobileLogo";
 
 export function AboutMe() {
+  const isMobileLogo = useIsMobileLogo();
+  
   return (
     <Container id="sobre-mim">
       <motion.div
-      className="grid-wrapper"
-        initial={{ opacity: 0, width: 0 }}
-        animate={{ opacity: 1, width: "100%" }}
+        className="grid-wrapper"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         exit={{
           opacity: 0,
-          x: window.innerWidth,
           transition: { duration: 0.5 },
         }}
       >
@@ -53,7 +55,7 @@ export function AboutMe() {
             </p>
           </div>
         </div>
-        <img className="logo" src={logoGreen} alt="Logo Juliana de Alencar" />
+        <img style={{display: isMobileLogo ? "none" : "block"}} className="logo" src={logoGreen} alt="Logo Juliana de Alencar" />
       </motion.div>
     </Container>
   );

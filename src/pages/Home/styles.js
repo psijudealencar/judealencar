@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     .content {
-    height: calc(100dvh - 5rem);
+    height: 94.5vh;
 
     position: relative;
     background: ${({ theme }) => theme.COLORS.CREAM};
@@ -38,12 +38,13 @@ export const Container = styled.div`
     }
 
     .flex-wrapper button {
+        margin-bottom: 10%;
+
         width: 65%;
         font-size: 1.4rem;
         background: #FFF;
         padding: 1rem 3rem;
         border-radius: 10rem;
-        margin-bottom: 5%;
         
         a {
             display: flex;
@@ -75,9 +76,10 @@ export const Container = styled.div`
         }
 
         .flex-wrapper button {
+            margin-bottom: 0%;
             width: 20%; /* Redefinido para 20% dentro da media query para desktop */
             font-size: 1.6rem; /* Redefinido para 1.6rem dentro da media query para desktop */
-            
+
             a {
                 gap: 3rem; /* Redefinido para 3rem dentro da media query para desktop */
             }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: calc(100dvh - 5rem);
+  height: 94.5vh;
 
   position: relative;
   background: ${({ theme }) => theme.COLORS.GREEN};
@@ -21,9 +21,7 @@ export const Container = styled.div`
     margin-top: 10%;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     text-align: center;
-    justify-content: space-evenly;
 
     figure {
       margin-bottom: 2rem;
@@ -52,13 +50,19 @@ export const Container = styled.div`
     }
 
     .flex-wrapper {
+      margin-top: 5%;
       line-height: 1;
       flex-wrap: nowrap;
-      gap: 10%;
+      justify-content: center;
+      gap: 5%;
 
       img {
         max-width: 10rem;
         margin-bottom: 2rem;
+      }
+
+      figure {
+        margin-inline: 0;
       }
 
       figcaption {
