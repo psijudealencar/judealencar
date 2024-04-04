@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     .content {
-    height: 94.5vh;
+    height: 94.5svh;
 
     position: relative;
     background: ${({ theme }) => theme.COLORS.CREAM};
@@ -28,9 +28,10 @@ export const Container = styled.div`
     }
 
     .flex-wrapper {
+        margin-top: 5rem;
         display: grid;
         place-items: center;
-        gap: 5rem;
+        gap: 3rem;
 
         img {
             max-width: 50%;

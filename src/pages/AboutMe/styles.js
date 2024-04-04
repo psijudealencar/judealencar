@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  height: 94.5vh;
+    height: 94.5svh;
 
   position: relative;
   padding-inline: 10%;
@@ -27,7 +27,7 @@ export const Container = styled.div`
     object-fit: cover;
     border-radius: 8rem;
     box-shadow: 0.7rem 0.7rem 0.5rem rgba(0, 0, 0, 0.4);
-    max-height: 50rem;
+    max-height: 40rem;
     margin-bottom: 2rem;
   }
 
@@ -50,7 +50,7 @@ export const Container = styled.div`
 
     .about p {
       line-height: 1.5;
-      font-size: calc(14px + (17.5 - 14) * (100vw - 600px) / (800 - 400));
+      font-size: calc(14px + (16.7 - 14) * (100vw - 600px) / (800 - 400));
     }
 
     .flex-wrapper {
