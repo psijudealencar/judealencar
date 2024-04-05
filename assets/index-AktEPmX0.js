@@ -489,6 +489,7 @@ Error generating stack: `+o.message+`
     &.plus {
       bottom: -1rem;
       right: -1rem;
+      color: #282828;
     }
 
     &.minus {
@@ -497,6 +498,7 @@ Error generating stack: `+o.message+`
       right: -2rem;
       width: 7rem;
       height: 7rem;
+      color: #282828;
     }
 
     &:hover {
