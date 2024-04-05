@@ -10,7 +10,7 @@ export function App() {
       style={{
         overflowY: "auto",
         scrollSnapType: "y mandatory",
-        height: "94.5vh",
+        height: "94.5svh",
         scrollBehavior: "smooth",
       }}
     >
