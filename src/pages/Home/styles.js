@@ -46,12 +46,16 @@ export const Container = styled.div`
         background: #FFF;
         padding: 1rem 3rem;
         border-radius: 10rem;
+
+        color: #282828;
         
         a {
             display: flex;
             gap: 1rem; /* Alterado para 1rem como padrão */
             align-items: center;
             justify-content: center;
+
+            color: #282828;
         }
     }
 

@@ -40,10 +40,14 @@ export const Container = styled.div`
       justify-content: center;
       gap: 1rem;
 
+      color: #282828;
+
       a {
         display: flex;
         align-items: center;
         gap: 1rem;
+
+        color: #282828;
       }
 
       .wpplogo {
