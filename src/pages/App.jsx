@@ -33,6 +33,7 @@ export function App() {
         style={{
           padding: "1rem",
           fontSize: "1.4rem",
+          scrollSnapAlign: "start",
         }}
       >
         site por{" "}
