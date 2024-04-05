@@ -248,12 +248,16 @@ Error generating stack: `+o.message+`
         background: #FFF;
         padding: 1rem 3rem;
         border-radius: 10rem;
+
+        color: #282828;
         
         a {
             display: flex;
             gap: 1rem; /* Alterado para 1rem como padrão */
             align-items: center;
             justify-content: center;
+
+            color: #282828;
         }
     }
 
@@ -654,10 +658,14 @@ Error generating stack: `+o.message+`
       justify-content: center;
       gap: 1rem;
 
+      color: #282828;
+
       a {
         display: flex;
         align-items: center;
         gap: 1rem;
+
+        color: #282828;
       }
 
       .wpplogo {
