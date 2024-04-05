@@ -69,6 +69,7 @@ export const Container = styled.div`
     &.plus {
       bottom: -1rem;
       right: -1rem;
+      color: #282828;
     }
 
     &.minus {
@@ -77,6 +78,7 @@ export const Container = styled.div`
       right: -2rem;
       width: 7rem;
       height: 7rem;
+      color: #282828;
     }
 
     &:hover {
